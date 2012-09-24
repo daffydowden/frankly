@@ -4,8 +4,8 @@ source "https://rubygems.org"
 gem "sinatra", require: "sinatra/base"
 
 group :development do
-  gem 'heroku'
-  gem 'foreman'
+  gem 'heroku', require: false
+  gem 'foreman', require: false
 end
 
 gem 'haml'
@@ -18,5 +18,6 @@ group :assets do
   gem 'bootstrap-sass'
 end
 
+# http://rtomayko.github.com/rack-cache/
 gem 'rack-cache', require: "rack/cache"
 gem 'thin'
