@@ -12,7 +12,7 @@ class MyApp < Sinatra::Base
   end
 
   configure do
-    # Shared config
+    set :views, settings.root + '/app/views'
   end
 
   before do
@@ -21,7 +21,7 @@ class MyApp < Sinatra::Base
   end
 
   get '/' do
-    'TEMP'
+    haml :index
   end
 
 end
