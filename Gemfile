@@ -12,11 +12,13 @@ end
 gem 'haml'
 gem 'sass'
 gem 'sprockets'
+gem 'sprockets-sass'
+gem 'sprockets-helpers'
+gem 'compass'
+gem 'bootstrap-sass'
 group :assets do  
   gem 'coffee-script'
   gem 'therubyracer'
-  gem 'compass'
-  gem 'bootstrap-sass'
 end
 
 # http://rtomayko.github.com/rack-cache/

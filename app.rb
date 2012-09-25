@@ -24,4 +24,8 @@ class MyApp < Sinatra::Base
     haml :index
   end
 
+  helpers do
+    include Sprockets::Helpers
+  end
+
 end
